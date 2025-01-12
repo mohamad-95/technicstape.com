@@ -1,0 +1,345 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+.bac{
+    background-image: url(images/logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: visible;
+    z-index: 999; /* Place above other content but below nav */
+  
+ 
+}
+
+
+
+
+/* Styling for the header and sticky header */
+header .sticky-header {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    box-sizing: border-box;
+     height: 40px;
+    }
+
+
+header .sticky-header span {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+header .sticky-header span:hover{
+    color: #ff5733;
+}
+
+
+
+header {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    clear: both;
+    z-index: 99;
+}
+    
+
+
+nav {
+    padding: 0;
+    
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+   
+}
+
+
+.down{
+    animation: mymove;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+
+@keyframes mymove {
+    from {top: -50px;}
+    to {top: 0px;}
+  }
+
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: rgb(16, 6, 109);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav .nav-links a:hover {
+    color: #ec1313;
+}
+
+.logo h1 {
+    color: #ec1313;
+}
+.hero {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(211, 15, 15);
+    text-align: center;
+    
+    
+}
+
+
+
+.hero h2  {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff5733;
+}
+
+
+
+
+
+section {
+    padding: 50px 20px;
+}
+
+.about{
+    text-align: center;
+    
+}
+
+
+
+/* Products Section */
+.products {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.product-item {
+    padding: 30px;
+    background: rgb(175, 174, 174);
+    border-radius: 3px;
+    overflow: hidden;
+    width: 25%;
+    margin: 5px;
+    position: relative;
+    border-radius: 3px;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding-right: calc(5px .5);
+    padding-left: calc(5px .5);
+    margin-top: var(5px);
+  animation: pro 2s;
+  animation-fill-mode: forwards;}
+
+#product-image1 
+    {animation-timing-function: linear;}
+#product-image 
+    {animation-timing-function: ease;}
+
+ #product-image2 
+    {animation-timing-function: ease;}
+   
+@keyframes pro {from {left: 0px;}
+to {left: 20px;}
+ 
+}
+
+#product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    
+}
+#product-image1 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    
+}
+
+#product-image2 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    
+}
+
+.product-item h3 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.product-item p {
+    font-size: 16px;
+}
+
+
+.about{
+    color: hwb(0 2% 57%);
+}
+
+
+footer p {
+    background-color: gray;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 15px;
+   margin-bottom: 0;
+}
+
+
+    
+
+.Categories{
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    unicode-bidi: isolate;
+
+}
+
+  
+.Categories span {
+    background-color: darkgray;
+    color: #3b0505;
+    border-radius: 3px;
+    padding: 4px 8px;
+    margin: 0 0 10px;
+    display: inline-block;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    
+}
+.Categories h4 {
+    font-size: 36px;
+    line-height: 52px;
+    font-weight: 600;
+    z-index: 9;
+    color: var(--dark-color);
+    padding: 0;
+    margin: 0 0;
+    position: relative;
+    display: block;
+}
+
+
+
+
+.home {
+        unicode-bidi: isolate;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        justify-content: flex-start;
+    
+}
+
+@media (max-width: 1023px) {
+    .home {
+        display: inline-flex
+;
+    }
+}
+
+.home ol li a {
+    list-style-type: none;
+    margin-right: 15px;
+    padding-left: 0;
+    letter-spacing: 0.04em;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--title-fonts);
+    list-style: none;
+    display: flex;
+    color: #ec1313;
+    
+}
+
+
+
+
+
+
+
+
+/* Single-sided tapes */
+.home ol{
+    list-style: none;
+    margin-right: 15px;
+    padding-left: 0;
+    letter-spacing: 0.04em;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--title-fonts);
+}
+
+.oneside {
+    background: rgb(206, 203, 203);
+    padding-top: 3px;
+    
+}
+
+.singleside {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    text-align: center;}
+
+    .item {
+        padding: 30px;
+        background: rgb(175, 174, 174);
+        border-radius: 3px;
+        overflow: hidden;
+        width: 25%;
+        margin: 5px;
+        position: relative;
+        border-radius: 3px;
+        box-sizing: border-box;
+        max-width: 100%;
+        padding-right: calc(5px .5);
+        padding-left: calc(5px .5);
+        margin-top: var(5px);
+      animation: pro 2s;
+      animation-fill-mode: forwards;}
